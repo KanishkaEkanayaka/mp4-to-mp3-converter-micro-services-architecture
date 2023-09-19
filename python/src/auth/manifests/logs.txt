@@ -1,0 +1,479 @@
+* 
+* ==> Audit <==
+* |---------|------|----------|------|---------|-----------------------|-----------------------|
+| Command | Args | Profile  | User | Version |      Start Time       |       End Time        |
+|---------|------|----------|------|---------|-----------------------|-----------------------|
+| start   |      | minikube | kaiz | v1.31.2 | 28 Aug 23 09:56 +0530 | 28 Aug 23 10:59 +0530 |
+| start   |      | minikube | kaiz | v1.31.2 | 29 Aug 23 20:40 +0530 | 29 Aug 23 20:46 +0530 |
+| start   |      | minikube | kaiz | v1.31.2 | 30 Aug 23 09:40 +0530 |                       |
+| start   |      | minikube | kaiz | v1.31.2 | 30 Aug 23 09:40 +0530 |                       |
+| start   |      | minikube | kaiz | v1.31.2 | 30 Aug 23 09:42 +0530 |                       |
+|---------|------|----------|------|---------|-----------------------|-----------------------|
+
+* 
+* ==> Last Start <==
+* Log file created at: 2023/08/30 09:42:10
+Running on machine: kaiz-laptop
+Binary: Built with gc go1.20.7 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0830 09:42:10.443051  186653 out.go:296] Setting OutFile to fd 1 ...
+I0830 09:42:10.443100  186653 out.go:348] isatty.IsTerminal(1) = true
+I0830 09:42:10.443102  186653 out.go:309] Setting ErrFile to fd 2...
+I0830 09:42:10.443105  186653 out.go:348] isatty.IsTerminal(2) = true
+I0830 09:42:10.443212  186653 root.go:338] Updating PATH: /home/kaiz/.minikube/bin
+I0830 09:42:10.443442  186653 out.go:303] Setting JSON to false
+I0830 09:42:10.444270  186653 start.go:128] hostinfo: {"hostname":"kaiz-laptop","uptime":160023,"bootTime":1693208708,"procs":398,"os":"linux","platform":"ubuntu","platformFamily":"debian","platformVersion":"22.04","kernelVersion":"6.2.0-26-generic","kernelArch":"x86_64","virtualizationSystem":"kvm","virtualizationRole":"host","hostId":"db2dfa34-09f8-4974-aa1d-e3b39e441a02"}
+I0830 09:42:10.444295  186653 start.go:138] virtualization: kvm host
+I0830 09:42:10.476424  186653 out.go:177] 😄  minikube v1.31.2 on Ubuntu 22.04
+I0830 09:42:10.521594  186653 notify.go:220] Checking for updates...
+I0830 09:42:10.522698  186653 config.go:182] Loaded profile config "minikube": Driver=qemu2, ContainerRuntime=docker, KubernetesVersion=v1.27.4
+I0830 09:42:10.522971  186653 driver.go:373] Setting default libvirt URI to qemu:///system
+I0830 09:42:10.544211  186653 out.go:177] ✨  Using the qemu2 driver based on existing profile
+I0830 09:42:10.566815  186653 start.go:298] selected driver: qemu2
+I0830 09:42:10.566837  186653 start.go:902] validating driver "qemu2" against &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube-builds/iso/16971/minikube-v1.31.0-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.40@sha256:8cadf23777709e43eca447c47a45f5a4635615129267ce025193040ec92a1631 Memory:3900 CPUs:2 DiskSize:20000 VMDriver: Driver:qemu2 HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:38201 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.27.4 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:10.0.2.15 Port:8443 KubernetesVersion:v1.27.4 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[default-storageclass:true storage-provisioner:true] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network:builtin Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/home/kaiz:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0}
+I0830 09:42:10.567089  186653 start.go:913] status for qemu2: {Installed:true Healthy:true Running:true NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0830 09:42:10.571680  186653 cni.go:84] Creating CNI manager for ""
+I0830 09:42:10.571704  186653 cni.go:158] "qemu2" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0830 09:42:10.571719  186653 start_flags.go:319] config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube-builds/iso/16971/minikube-v1.31.0-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.40@sha256:8cadf23777709e43eca447c47a45f5a4635615129267ce025193040ec92a1631 Memory:3900 CPUs:2 DiskSize:20000 VMDriver: Driver:qemu2 HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:38201 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.27.4 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:10.0.2.15 Port:8443 KubernetesVersion:v1.27.4 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[default-storageclass:true storage-provisioner:true] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network:builtin Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/home/kaiz:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0}
+I0830 09:42:10.572054  186653 iso.go:125] acquiring lock: {Name:mk78dd998f9b60552bff1a5a1b55edf1a0324634 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0830 09:42:10.611930  186653 out.go:177] 👍  Starting control plane node minikube in cluster minikube
+I0830 09:42:10.634626  186653 preload.go:132] Checking if preload exists for k8s version v1.27.4 and runtime docker
+I0830 09:42:10.634720  186653 preload.go:148] Found local preload: /home/kaiz/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.27.4-docker-overlay2-amd64.tar.lz4
+I0830 09:42:10.634746  186653 cache.go:57] Caching tarball of preloaded images
+I0830 09:42:10.634943  186653 preload.go:174] Found /home/kaiz/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.27.4-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0830 09:42:10.634961  186653 cache.go:60] Finished verifying existence of preloaded tar for  v1.27.4 on docker
+I0830 09:42:10.635176  186653 profile.go:148] Saving config to /home/kaiz/.minikube/profiles/minikube/config.json ...
+I0830 09:42:10.635628  186653 start.go:365] acquiring machines lock for minikube: {Name:mk67cbe88a1444aafa1a1cf6f1e55fdeb899341f Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0830 09:42:10.635699  186653 start.go:369] acquired machines lock for "minikube" in 46.172µs
+I0830 09:42:10.635721  186653 start.go:96] Skipping create...Using existing machine configuration
+I0830 09:42:10.635739  186653 fix.go:54] fixHost starting: 
+I0830 09:42:10.637882  186653 fix.go:102] recreateIfNeeded on minikube: state=Running err=<nil>
+W0830 09:42:10.637909  186653 fix.go:128] unexpected machine state, will restart: <nil>
+I0830 09:42:10.657789  186653 out.go:177] 🏃  Updating the running qemu2 "minikube" VM ...
+I0830 09:42:10.680394  186653 machine.go:88] provisioning docker machine ...
+I0830 09:42:10.680439  186653 buildroot.go:166] provisioning hostname "minikube"
+I0830 09:42:10.680582  186653 main.go:141] libmachine: Using SSH client type: native
+I0830 09:42:10.681952  186653 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x80f160] 0x812200 <nil>  [] 0s} localhost 43129 <nil> <nil>}
+I0830 09:42:10.681977  186653 main.go:141] libmachine: About to run SSH command:
+sudo hostname minikube && echo "minikube" | sudo tee /etc/hostname
+I0830 09:42:10.814531  186653 main.go:141] libmachine: SSH cmd err, output: <nil>: minikube
+
+I0830 09:42:10.814576  186653 main.go:141] libmachine: Using SSH client type: native
+I0830 09:42:10.814997  186653 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x80f160] 0x812200 <nil>  [] 0s} localhost 43129 <nil> <nil>}
+I0830 09:42:10.815009  186653 main.go:141] libmachine: About to run SSH command:
+
+		if ! grep -xq '.*\sminikube' /etc/hosts; then
+			if grep -xq '127.0.1.1\s.*' /etc/hosts; then
+				sudo sed -i 's/^127.0.1.1\s.*/127.0.1.1 minikube/g' /etc/hosts;
+			else 
+				echo '127.0.1.1 minikube' | sudo tee -a /etc/hosts; 
+			fi
+		fi
+I0830 09:42:10.899302  186653 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0830 09:42:10.899317  186653 buildroot.go:172] set auth options {CertDir:/home/kaiz/.minikube CaCertPath:/home/kaiz/.minikube/certs/ca.pem CaPrivateKeyPath:/home/kaiz/.minikube/certs/ca-key.pem CaCertRemotePath:/etc/docker/ca.pem ServerCertPath:/home/kaiz/.minikube/machines/server.pem ServerKeyPath:/home/kaiz/.minikube/machines/server-key.pem ClientKeyPath:/home/kaiz/.minikube/certs/key.pem ServerCertRemotePath:/etc/docker/server.pem ServerKeyRemotePath:/etc/docker/server-key.pem ClientCertPath:/home/kaiz/.minikube/certs/cert.pem ServerCertSANs:[] StorePath:/home/kaiz/.minikube}
+I0830 09:42:10.899360  186653 buildroot.go:174] setting up certificates
+I0830 09:42:10.899367  186653 provision.go:83] configureAuth start
+I0830 09:42:10.899372  186653 provision.go:138] copyHostCerts
+I0830 09:42:10.899399  186653 exec_runner.go:144] found /home/kaiz/.minikube/ca.pem, removing ...
+I0830 09:42:10.899404  186653 exec_runner.go:203] rm: /home/kaiz/.minikube/ca.pem
+I0830 09:42:10.899458  186653 exec_runner.go:151] cp: /home/kaiz/.minikube/certs/ca.pem --> /home/kaiz/.minikube/ca.pem (1070 bytes)
+I0830 09:42:10.899514  186653 exec_runner.go:144] found /home/kaiz/.minikube/cert.pem, removing ...
+I0830 09:42:10.899516  186653 exec_runner.go:203] rm: /home/kaiz/.minikube/cert.pem
+I0830 09:42:10.899531  186653 exec_runner.go:151] cp: /home/kaiz/.minikube/certs/cert.pem --> /home/kaiz/.minikube/cert.pem (1115 bytes)
+I0830 09:42:10.899562  186653 exec_runner.go:144] found /home/kaiz/.minikube/key.pem, removing ...
+I0830 09:42:10.899563  186653 exec_runner.go:203] rm: /home/kaiz/.minikube/key.pem
+I0830 09:42:10.899577  186653 exec_runner.go:151] cp: /home/kaiz/.minikube/certs/key.pem --> /home/kaiz/.minikube/key.pem (1679 bytes)
+I0830 09:42:10.899605  186653 provision.go:112] generating server cert: /home/kaiz/.minikube/machines/server.pem ca-key=/home/kaiz/.minikube/certs/ca.pem private-key=/home/kaiz/.minikube/certs/ca-key.pem org=kaiz.minikube san=[127.0.0.1 localhost localhost 127.0.0.1 minikube minikube]
+I0830 09:42:10.960158  186653 provision.go:172] copyRemoteCerts
+I0830 09:42:10.960191  186653 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0830 09:42:10.960198  186653 sshutil.go:53] new ssh client: &{IP:localhost Port:43129 SSHKeyPath:/home/kaiz/.minikube/machines/minikube/id_rsa Username:docker}
+I0830 09:42:11.019114  186653 ssh_runner.go:362] scp /home/kaiz/.minikube/machines/server-key.pem --> /etc/docker/server-key.pem (1675 bytes)
+I0830 09:42:11.041527  186653 ssh_runner.go:362] scp /home/kaiz/.minikube/certs/ca.pem --> /etc/docker/ca.pem (1070 bytes)
+I0830 09:42:11.056211  186653 ssh_runner.go:362] scp /home/kaiz/.minikube/machines/server.pem --> /etc/docker/server.pem (1200 bytes)
+I0830 09:42:11.069208  186653 provision.go:86] duration metric: configureAuth took 169.83408ms
+I0830 09:42:11.069215  186653 buildroot.go:189] setting minikube options for container-runtime
+I0830 09:42:11.069319  186653 config.go:182] Loaded profile config "minikube": Driver=qemu2, ContainerRuntime=docker, KubernetesVersion=v1.27.4
+I0830 09:42:11.069356  186653 main.go:141] libmachine: Using SSH client type: native
+I0830 09:42:11.069613  186653 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x80f160] 0x812200 <nil>  [] 0s} localhost 43129 <nil> <nil>}
+I0830 09:42:11.069617  186653 main.go:141] libmachine: About to run SSH command:
+df --output=fstype / | tail -n 1
+I0830 09:42:11.163674  186653 main.go:141] libmachine: SSH cmd err, output: <nil>: tmpfs
+
+I0830 09:42:11.163681  186653 buildroot.go:70] root file system type: tmpfs
+I0830 09:42:11.163766  186653 provision.go:309] Updating docker unit: /lib/systemd/system/docker.service ...
+I0830 09:42:11.163802  186653 main.go:141] libmachine: Using SSH client type: native
+I0830 09:42:11.164059  186653 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x80f160] 0x812200 <nil>  [] 0s} localhost 43129 <nil> <nil>}
+I0830 09:42:11.164095  186653 main.go:141] libmachine: About to run SSH command:
+sudo mkdir -p /lib/systemd/system && printf %!s(MISSING) "[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=qemu2 --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP \$MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+" | sudo tee /lib/systemd/system/docker.service.new
+I0830 09:42:11.301494  186653 main.go:141] libmachine: SSH cmd err, output: <nil>: [Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=qemu2 --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP $MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
+I0830 09:42:11.301580  186653 main.go:141] libmachine: Using SSH client type: native
+I0830 09:42:11.302261  186653 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x80f160] 0x812200 <nil>  [] 0s} localhost 43129 <nil> <nil>}
+I0830 09:42:11.302287  186653 main.go:141] libmachine: About to run SSH command:
+sudo diff -u /lib/systemd/system/docker.service /lib/systemd/system/docker.service.new || { sudo mv /lib/systemd/system/docker.service.new /lib/systemd/system/docker.service; sudo systemctl -f daemon-reload && sudo systemctl -f enable docker && sudo systemctl -f restart docker; }
+I0830 09:42:11.404960  186653 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0830 09:42:11.404982  186653 machine.go:91] provisioned docker machine in 724.576803ms
+I0830 09:42:11.404987  186653 start.go:300] post-start starting for "minikube" (driver="qemu2")
+I0830 09:42:11.404992  186653 start.go:329] creating required directories: [/etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs]
+I0830 09:42:11.405029  186653 ssh_runner.go:195] Run: sudo mkdir -p /etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs
+I0830 09:42:11.405035  186653 sshutil.go:53] new ssh client: &{IP:localhost Port:43129 SSHKeyPath:/home/kaiz/.minikube/machines/minikube/id_rsa Username:docker}
+I0830 09:42:11.471540  186653 ssh_runner.go:195] Run: cat /etc/os-release
+I0830 09:42:11.477439  186653 info.go:137] Remote host: Buildroot 2021.02.12
+I0830 09:42:11.477453  186653 filesync.go:126] Scanning /home/kaiz/.minikube/addons for local assets ...
+I0830 09:42:11.477517  186653 filesync.go:126] Scanning /home/kaiz/.minikube/files for local assets ...
+I0830 09:42:11.477547  186653 start.go:303] post-start completed in 72.552957ms
+I0830 09:42:11.477556  186653 fix.go:56] fixHost completed within 841.830099ms
+I0830 09:42:11.477614  186653 main.go:141] libmachine: Using SSH client type: native
+I0830 09:42:11.478212  186653 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x80f160] 0x812200 <nil>  [] 0s} localhost 43129 <nil> <nil>}
+I0830 09:42:11.478220  186653 main.go:141] libmachine: About to run SSH command:
+date +%!s(MISSING).%!N(MISSING)
+I0830 09:42:11.558620  186653 main.go:141] libmachine: SSH cmd err, output: <nil>: 1693368731.862576106
+
+I0830 09:42:11.558632  186653 fix.go:206] guest clock: 1693368731.862576106
+I0830 09:42:11.558637  186653 fix.go:219] Guest: 2023-08-30 09:42:11.862576106 +0530 +0530 Remote: 2023-08-30 09:42:11.477558005 +0530 +0530 m=+1.154143851 (delta=385.018101ms)
+I0830 09:42:11.558655  186653 fix.go:190] guest clock delta is within tolerance: 385.018101ms
+I0830 09:42:11.558658  186653 start.go:83] releasing machines lock for "minikube", held for 922.951093ms
+I0830 09:42:11.558755  186653 ssh_runner.go:195] Run: curl -sS -m 2 https://registry.k8s.io/
+I0830 09:42:11.558775  186653 sshutil.go:53] new ssh client: &{IP:localhost Port:43129 SSHKeyPath:/home/kaiz/.minikube/machines/minikube/id_rsa Username:docker}
+I0830 09:42:11.558783  186653 ssh_runner.go:195] Run: cat /version.json
+I0830 09:42:11.558788  186653 sshutil.go:53] new ssh client: &{IP:localhost Port:43129 SSHKeyPath:/home/kaiz/.minikube/machines/minikube/id_rsa Username:docker}
+I0830 09:42:12.015329  186653 ssh_runner.go:195] Run: systemctl --version
+I0830 09:42:12.031456  186653 ssh_runner.go:195] Run: sh -c "stat /etc/cni/net.d/*loopback.conf*"
+W0830 09:42:12.046249  186653 cni.go:209] loopback cni configuration skipped: "/etc/cni/net.d/*loopback.conf*" not found
+I0830 09:42:12.046378  186653 ssh_runner.go:195] Run: sudo find /etc/cni/net.d -maxdepth 1 -type f ( ( -name *bridge* -or -name *podman* ) -and -not -name *.mk_disabled ) -printf "%!p(MISSING), " -exec sh -c "sudo mv {} {}.mk_disabled" ;
+I0830 09:42:12.070272  186653 cni.go:259] no active bridge cni configs found in "/etc/cni/net.d" - nothing to disable
+I0830 09:42:12.070288  186653 start.go:466] detecting cgroup driver to use...
+I0830 09:42:12.070427  186653 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %!s(MISSING) "runtime-endpoint: unix:///run/containerd/containerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0830 09:42:12.092050  186653 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)sandbox_image = .*$|\1sandbox_image = "registry.k8s.io/pause:3.9"|' /etc/containerd/config.toml"
+I0830 09:42:12.099894  186653 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)restrict_oom_score_adj = .*$|\1restrict_oom_score_adj = false|' /etc/containerd/config.toml"
+I0830 09:42:12.106702  186653 containerd.go:145] configuring containerd to use "cgroupfs" as cgroup driver...
+I0830 09:42:12.106725  186653 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)SystemdCgroup = .*$|\1SystemdCgroup = false|g' /etc/containerd/config.toml"
+I0830 09:42:12.112720  186653 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runtime.v1.linux"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0830 09:42:12.118509  186653 ssh_runner.go:195] Run: sh -c "sudo sed -i '/systemd_cgroup/d' /etc/containerd/config.toml"
+I0830 09:42:12.124395  186653 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runc.v1"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0830 09:42:12.130241  186653 ssh_runner.go:195] Run: sh -c "sudo rm -rf /etc/cni/net.mk"
+I0830 09:42:12.136170  186653 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)conf_dir = .*$|\1conf_dir = "/etc/cni/net.d"|g' /etc/containerd/config.toml"
+I0830 09:42:12.141663  186653 ssh_runner.go:195] Run: sudo sysctl net.bridge.bridge-nf-call-iptables
+I0830 09:42:12.146801  186653 ssh_runner.go:195] Run: sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
+I0830 09:42:12.151946  186653 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0830 09:42:12.248938  186653 ssh_runner.go:195] Run: sudo systemctl restart containerd
+I0830 09:42:12.260345  186653 start.go:466] detecting cgroup driver to use...
+I0830 09:42:12.260423  186653 ssh_runner.go:195] Run: sudo systemctl cat docker.service
+I0830 09:42:12.270715  186653 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0830 09:42:12.278622  186653 ssh_runner.go:195] Run: sudo systemctl stop -f containerd
+I0830 09:42:12.289782  186653 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0830 09:42:12.297731  186653 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service crio
+I0830 09:42:12.305292  186653 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %!s(MISSING) "runtime-endpoint: unix:///var/run/cri-dockerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0830 09:42:12.315549  186653 ssh_runner.go:195] Run: which cri-dockerd
+I0830 09:42:12.317782  186653 ssh_runner.go:195] Run: sudo mkdir -p /etc/systemd/system/cri-docker.service.d
+I0830 09:42:12.323254  186653 ssh_runner.go:362] scp memory --> /etc/systemd/system/cri-docker.service.d/10-cni.conf (189 bytes)
+I0830 09:42:12.332964  186653 ssh_runner.go:195] Run: sudo systemctl unmask docker.service
+I0830 09:42:12.429696  186653 ssh_runner.go:195] Run: sudo systemctl enable docker.socket
+I0830 09:42:12.524355  186653 docker.go:535] configuring docker to use "cgroupfs" as cgroup driver...
+I0830 09:42:12.524379  186653 ssh_runner.go:362] scp memory --> /etc/docker/daemon.json (144 bytes)
+I0830 09:42:12.534345  186653 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0830 09:42:12.631207  186653 ssh_runner.go:195] Run: sudo systemctl restart docker
+I0830 09:42:12.695055  186653 out.go:177] 
+W0830 09:42:12.717738  186653 out.go:239] ❌  Exiting due to RUNTIME_ENABLE: Failed to enable container runtime: sudo systemctl restart docker: Process exited with status 1
+stdout:
+
+stderr:
+Job for docker.service failed because the control process exited with error code.
+See "systemctl status docker.service" and "journalctl -xe" for details.
+
+W0830 09:42:12.717789  186653 out.go:239] 
+W0830 09:42:12.720256  186653 out.go:239] [31m╭───────────────────────────────────────────────────────────────────────────────────────────╮[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    😿  If the above advice does not help, please let us know:                             [31m│[0m
+[31m│[0m    👉  https://github.com/kubernetes/minikube/issues/new/choose                           [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    Please run `minikube logs --file=logs.txt` and attach logs.txt to the GitHub issue.    [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m╰───────────────────────────────────────────────────────────────────────────────────────────╯[0m
+I0830 09:42:12.762944  186653 out.go:177] 
+
+* 
+* ==> Docker <==
+* -- Journal begins at Tue 2023-08-29 15:10:54 UTC, ends at Wed 2023-08-30 04:12:31 UTC. --
+Aug 30 04:10:51 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 30 04:10:51 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+Aug 30 04:10:51 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 30 04:10:51 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 30 04:10:51 minikube dockerd[204314]: time="2023-08-30T04:10:51.296852189Z" level=info msg="Starting up"
+Aug 30 04:10:51 minikube dockerd[204314]: chmod /var/lib/docker: read-only file system
+Aug 30 04:10:51 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 30 04:10:51 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 30 04:10:51 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 30 04:10:51 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+Aug 30 04:10:51 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 30 04:10:51 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 30 04:10:51 minikube dockerd[204323]: time="2023-08-30T04:10:51.581841564Z" level=info msg="Starting up"
+Aug 30 04:10:51 minikube dockerd[204323]: chmod /var/lib/docker: read-only file system
+Aug 30 04:10:51 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 30 04:10:51 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 30 04:10:51 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 30 04:10:51 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+Aug 30 04:10:51 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 30 04:10:51 minikube systemd[1]: docker.service: Start request repeated too quickly.
+Aug 30 04:10:51 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 30 04:10:51 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 30 04:10:54 minikube cri-dockerd[1031]: time="2023-08-30T04:10:54Z" level=error msg="Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?Failed to get docker info"
+Aug 30 04:11:04 minikube cri-dockerd[1031]: time="2023-08-30T04:11:04Z" level=error msg="Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?Failed to get docker info"
+Aug 30 04:11:14 minikube cri-dockerd[1031]: time="2023-08-30T04:11:14Z" level=error msg="Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?Failed to get docker info"
+Aug 30 04:11:24 minikube cri-dockerd[1031]: time="2023-08-30T04:11:24Z" level=error msg="Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?Failed to get docker info"
+Aug 30 04:11:34 minikube cri-dockerd[1031]: time="2023-08-30T04:11:34Z" level=error msg="Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?Failed to get docker info"
+Aug 30 04:11:43 minikube cri-dockerd[1031]: time="2023-08-30T04:11:43Z" level=error msg="Unable to get docker version: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:11:44 minikube cri-dockerd[1031]: time="2023-08-30T04:11:44Z" level=error msg="Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?Failed to get docker info"
+Aug 30 04:11:55 minikube cri-dockerd[1031]: time="2023-08-30T04:11:55Z" level=error msg="Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?Failed to get docker info"
+Aug 30 04:12:05 minikube cri-dockerd[1031]: time="2023-08-30T04:12:05Z" level=error msg="Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?Failed to get docker info"
+Aug 30 04:12:12 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 30 04:12:12 minikube dockerd[204665]: time="2023-08-30T04:12:12.974607399Z" level=info msg="Starting up"
+Aug 30 04:12:12 minikube dockerd[204665]: chmod /var/lib/docker: read-only file system
+Aug 30 04:12:12 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 30 04:12:12 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 30 04:12:12 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 30 04:12:13 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+Aug 30 04:12:13 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 30 04:12:13 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 30 04:12:13 minikube dockerd[204675]: time="2023-08-30T04:12:13.331021241Z" level=info msg="Starting up"
+Aug 30 04:12:13 minikube dockerd[204675]: chmod /var/lib/docker: read-only file system
+Aug 30 04:12:13 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 30 04:12:13 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 30 04:12:13 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 30 04:12:13 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+Aug 30 04:12:13 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 30 04:12:13 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 30 04:12:13 minikube dockerd[204686]: time="2023-08-30T04:12:13.578645662Z" level=info msg="Starting up"
+Aug 30 04:12:13 minikube dockerd[204686]: chmod /var/lib/docker: read-only file system
+Aug 30 04:12:13 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 30 04:12:13 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 30 04:12:13 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 30 04:12:13 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+Aug 30 04:12:13 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 30 04:12:13 minikube systemd[1]: docker.service: Start request repeated too quickly.
+Aug 30 04:12:13 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 30 04:12:13 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 30 04:12:15 minikube cri-dockerd[1031]: time="2023-08-30T04:12:15Z" level=error msg="Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?Failed to get docker info"
+Aug 30 04:12:25 minikube cri-dockerd[1031]: time="2023-08-30T04:12:25Z" level=error msg="Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?Failed to get docker info"
+
+* 
+* ==> container status <==
+* 
+* ==> describe nodes <==
+* 
+* ==> dmesg <==
+* [Aug29 15:10] You have booted with nomodeset. This means your GPU drivers are DISABLED
+[  +0.000000] Any video related functionality will be severely degraded, and you may not even be able to suspend the system properly
+[  +0.000002] Unless you actually understand what nomodeset does, you should reboot without enabling it
+[  +0.215949] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[  +3.593553] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[  +1.109320] systemd-fstab-generator[101]: Ignoring "noauto" for root device
+[  +0.068729] systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+[  +0.000002] systemd[1]: (This warning is only shown for the first unit using IP firewalling.)
+[  +3.415825] NFSD: Using /var/lib/nfs/v4recovery as the NFSv4 state recovery directory
+[  +0.000010] NFSD: unable to find recovery directory /var/lib/nfs/v4recovery
+[  +0.000001] NFSD: Unable to initialize client recovery tracking! (-2)
+[Aug29 15:11] systemd-fstab-generator[502]: Ignoring "noauto" for root device
+[  +0.106465] systemd-fstab-generator[513]: Ignoring "noauto" for root device
+[ +46.859603] kauditd_printk_skb: 7 callbacks suppressed
+[Aug29 15:12] systemd-fstab-generator[741]: Ignoring "noauto" for root device
+[  +0.597977] systemd-fstab-generator[780]: Ignoring "noauto" for root device
+[  +0.083703] systemd-fstab-generator[791]: Ignoring "noauto" for root device
+[  +0.096446] systemd-fstab-generator[804]: Ignoring "noauto" for root device
+[ +12.333788] kauditd_printk_skb: 11 callbacks suppressed
+[  +3.768112] systemd-fstab-generator[976]: Ignoring "noauto" for root device
+[  +0.093091] systemd-fstab-generator[987]: Ignoring "noauto" for root device
+[  +0.086918] systemd-fstab-generator[998]: Ignoring "noauto" for root device
+[  +0.086580] systemd-fstab-generator[1009]: Ignoring "noauto" for root device
+[  +0.101032] systemd-fstab-generator[1023]: Ignoring "noauto" for root device
+[ +16.789416] systemd-fstab-generator[1246]: Ignoring "noauto" for root device
+[  +3.301890] kauditd_printk_skb: 29 callbacks suppressed
+[Aug29 15:16] kauditd_printk_skb: 14 callbacks suppressed
+[Aug30 03:56] blk_update_request: I/O error, dev sda, sector 19316112 op 0x1:(WRITE) flags 0x800 phys_seg 1 prio class 0
+[  +0.000440] Aborting journal on device sda1-8.
+[  +0.476965] EXT4-fs error (device sda1): ext4_journal_check_start:83: Detected aborted journal
+[  +0.003017] EXT4-fs (sda1): Remounting filesystem read-only
+[  +0.001939] EXT4-fs (sda1): failed to convert unwritten extents to written extents -- potential data loss!  (inode 7337221, error -30)
+[  +0.273870] EXT4-fs error (device sda1): ext4_journal_check_start:83: Detected aborted journal
+[  +0.290082] EXT4-fs error (device sda1): ext4_journal_check_start:83: Detected aborted journal
+[  +0.001077] EXT4-fs error (device sda1): ext4_journal_check_start:83: Detected aborted journal
+[  +0.001023] EXT4-fs error (device sda1): ext4_journal_check_start:83: Detected aborted journal
+[Aug30 04:10] systemd-fstab-generator[203656]: Ignoring "noauto" for root device
+[  +0.287825] systemd-fstab-generator[203693]: Ignoring "noauto" for root device
+[  +0.123365] systemd-fstab-generator[203711]: Ignoring "noauto" for root device
+[  +0.131488] systemd-fstab-generator[203724]: Ignoring "noauto" for root device
+[ +34.065233] systemd-fstab-generator[204240]: Ignoring "noauto" for root device
+[  +0.196400] systemd-fstab-generator[204273]: Ignoring "noauto" for root device
+[  +0.099517] systemd-fstab-generator[204284]: Ignoring "noauto" for root device
+[  +0.106265] systemd-fstab-generator[204297]: Ignoring "noauto" for root device
+[Aug30 04:12] systemd-fstab-generator[204598]: Ignoring "noauto" for root device
+[  +0.177459] systemd-fstab-generator[204633]: Ignoring "noauto" for root device
+[  +0.097557] systemd-fstab-generator[204644]: Ignoring "noauto" for root device
+[  +0.105632] systemd-fstab-generator[204657]: Ignoring "noauto" for root device
+
+* 
+* ==> kernel <==
+*  04:12:31 up 13:01,  0 users,  load average: 0.11, 0.30, 0.83
+Linux minikube 5.10.57 #1 SMP Sat Jul 15 01:42:36 UTC 2023 x86_64 GNU/Linux
+PRETTY_NAME="Buildroot 2021.02.12"
+
+* 
+* ==> kubelet <==
+* -- Journal begins at Tue 2023-08-29 15:10:54 UTC, ends at Wed 2023-08-30 04:12:31 UTC. --
+Aug 30 04:12:19 minikube kubelet[1252]: E0830 04:12:19.797679    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:19 minikube kubelet[1252]: E0830 04:12:19.797895    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:19 minikube kubelet[1252]: E0830 04:12:19.797992    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:20 minikube kubelet[1252]: E0830 04:12:20.799462    1252 kubelet_node_status.go:540] "Error updating node status, will retry" err="error getting node \"minikube\": Get \"https://control-plane.minikube.internal:8443/api/v1/nodes/minikube?resourceVersion=0&timeout=10s\": dial tcp 10.0.2.15:8443: connect: connection refused"
+Aug 30 04:12:20 minikube kubelet[1252]: E0830 04:12:20.799785    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:20 minikube kubelet[1252]: E0830 04:12:20.800220    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:20 minikube kubelet[1252]: E0830 04:12:20.800243    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:20 minikube kubelet[1252]: E0830 04:12:20.800621    1252 kubelet_node_status.go:540] "Error updating node status, will retry" err="error getting node \"minikube\": Get \"https://control-plane.minikube.internal:8443/api/v1/nodes/minikube?timeout=10s\": dial tcp 10.0.2.15:8443: connect: connection refused"
+Aug 30 04:12:20 minikube kubelet[1252]: E0830 04:12:20.800891    1252 kubelet_node_status.go:540] "Error updating node status, will retry" err="error getting node \"minikube\": Get \"https://control-plane.minikube.internal:8443/api/v1/nodes/minikube?timeout=10s\": dial tcp 10.0.2.15:8443: connect: connection refused"
+Aug 30 04:12:20 minikube kubelet[1252]: E0830 04:12:20.801127    1252 kubelet_node_status.go:540] "Error updating node status, will retry" err="error getting node \"minikube\": Get \"https://control-plane.minikube.internal:8443/api/v1/nodes/minikube?timeout=10s\": dial tcp 10.0.2.15:8443: connect: connection refused"
+Aug 30 04:12:20 minikube kubelet[1252]: E0830 04:12:20.801353    1252 kubelet_node_status.go:540] "Error updating node status, will retry" err="error getting node \"minikube\": Get \"https://control-plane.minikube.internal:8443/api/v1/nodes/minikube?timeout=10s\": dial tcp 10.0.2.15:8443: connect: connection refused"
+Aug 30 04:12:20 minikube kubelet[1252]: E0830 04:12:20.801376    1252 kubelet_node_status.go:527] "Unable to update node status" err="update node status exceeds retry count"
+Aug 30 04:12:21 minikube kubelet[1252]: E0830 04:12:21.585662    1252 kubelet.go:2770] "Container runtime not ready" runtimeReady="RuntimeReady=false reason:DockerDaemonNotReady message:docker: failed to get docker version: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:21 minikube kubelet[1252]: E0830 04:12:21.803590    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:21 minikube kubelet[1252]: E0830 04:12:21.803731    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:21 minikube kubelet[1252]: E0830 04:12:21.803846    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:22 minikube kubelet[1252]: E0830 04:12:22.807152    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:22 minikube kubelet[1252]: E0830 04:12:22.807274    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:22 minikube kubelet[1252]: E0830 04:12:22.807340    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:23 minikube kubelet[1252]: E0830 04:12:23.342740    1252 kubelet.go:2281] "Skipping pod synchronization" err="[container runtime is down, container runtime not ready: RuntimeReady=false reason:DockerDaemonNotReady message:docker: failed to get docker version: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?]"
+Aug 30 04:12:23 minikube kubelet[1252]: E0830 04:12:23.808689    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:23 minikube kubelet[1252]: E0830 04:12:23.809176    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:23 minikube kubelet[1252]: E0830 04:12:23.809207    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:24 minikube kubelet[1252]: E0830 04:12:24.810554    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:24 minikube kubelet[1252]: E0830 04:12:24.810594    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:24 minikube kubelet[1252]: E0830 04:12:24.810610    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:25 minikube kubelet[1252]: E0830 04:12:25.026968    1252 remote_image.go:208] "ImageFsInfo from image service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:25 minikube kubelet[1252]: E0830 04:12:25.026993    1252 eviction_manager.go:262] "Eviction manager: failed to get summary stats" err="failed to get imageFs stats: rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:25 minikube kubelet[1252]: E0830 04:12:25.241437    1252 event.go:289] Unable to write event: '&v1.Event{TypeMeta:v1.TypeMeta{Kind:"", APIVersion:""}, ObjectMeta:v1.ObjectMeta{Name:"kube-apiserver-minikube.177fe372fed0a59c", GenerateName:"", Namespace:"kube-system", SelfLink:"", UID:"", ResourceVersion:"9773", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, InvolvedObject:v1.ObjectReference{Kind:"Pod", Namespace:"kube-system", Name:"kube-apiserver-minikube", UID:"77b94530d08aa7cb7fdaa3ac7fcc7cbb", APIVersion:"v1", ResourceVersion:"", FieldPath:"spec.containers{kube-apiserver}"}, Reason:"Unhealthy", Message:"Liveness probe failed: HTTP probe failed with statuscode: 500", Source:v1.EventSource{Component:"kubelet", Host:"minikube"}, FirstTimestamp:time.Date(2023, time.August, 29, 15, 14, 27, 0, time.Local), LastTimestamp:time.Date(2023, time.August, 30, 3, 57, 0, 588654740, time.Local), Count:35, Type:"Warning", EventTime:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Series:(*v1.EventSeries)(nil), Action:"", Related:(*v1.ObjectReference)(nil), ReportingController:"", ReportingInstance:""}': 'Patch "https://control-plane.minikube.internal:8443/api/v1/namespaces/kube-system/events/kube-apiserver-minikube.177fe372fed0a59c": dial tcp 10.0.2.15:8443: connect: connection refused'(may retry after sleeping)
+Aug 30 04:12:25 minikube kubelet[1252]: E0830 04:12:25.813892    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:25 minikube kubelet[1252]: E0830 04:12:25.814031    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:25 minikube kubelet[1252]: E0830 04:12:25.814096    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:26 minikube kubelet[1252]: E0830 04:12:26.308631    1252 controller.go:146] "Failed to ensure lease exists, will retry" err="Get \"https://control-plane.minikube.internal:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/minikube?timeout=10s\": dial tcp 10.0.2.15:8443: connect: connection refused" interval="7s"
+Aug 30 04:12:26 minikube kubelet[1252]: E0830 04:12:26.588813    1252 kubelet.go:2770] "Container runtime not ready" runtimeReady="RuntimeReady=false reason:DockerDaemonNotReady message:docker: failed to get docker version: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:26 minikube kubelet[1252]: E0830 04:12:26.816502    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:26 minikube kubelet[1252]: E0830 04:12:26.816630    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:26 minikube kubelet[1252]: E0830 04:12:26.816692    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:26 minikube kubelet[1252]: E0830 04:12:26.846524    1252 remote_runtime.go:390] "ListContainers with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="&ContainerFilter{Id:,State:nil,PodSandboxId:,LabelSelector:map[string]string{},}"
+Aug 30 04:12:26 minikube kubelet[1252]: E0830 04:12:26.846649    1252 container_log_manager.go:185] "Failed to rotate container logs" err="failed to list containers: rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:27 minikube kubelet[1252]: E0830 04:12:27.819397    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:27 minikube kubelet[1252]: E0830 04:12:27.819538    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:27 minikube kubelet[1252]: E0830 04:12:27.819604    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:28 minikube kubelet[1252]: E0830 04:12:28.344235    1252 kubelet.go:2281] "Skipping pod synchronization" err="[container runtime is down, container runtime not ready: RuntimeReady=false reason:DockerDaemonNotReady message:docker: failed to get docker version: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?]"
+Aug 30 04:12:28 minikube kubelet[1252]: E0830 04:12:28.822991    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:28 minikube kubelet[1252]: E0830 04:12:28.823132    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:28 minikube kubelet[1252]: E0830 04:12:28.823197    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:29 minikube kubelet[1252]: I0830 04:12:29.017448    1252 status_manager.go:809] "Failed to get status for pod" podUID=77b94530d08aa7cb7fdaa3ac7fcc7cbb pod="kube-system/kube-apiserver-minikube" err="Get \"https://control-plane.minikube.internal:8443/api/v1/namespaces/kube-system/pods/kube-apiserver-minikube\": dial tcp 10.0.2.15:8443: connect: connection refused"
+Aug 30 04:12:29 minikube kubelet[1252]: E0830 04:12:29.825904    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:29 minikube kubelet[1252]: E0830 04:12:29.826045    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:29 minikube kubelet[1252]: E0830 04:12:29.826110    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:30 minikube kubelet[1252]: E0830 04:12:30.827669    1252 remote_runtime.go:277] "ListPodSandbox with filter from runtime service failed" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?" filter="nil"
+Aug 30 04:12:30 minikube kubelet[1252]: E0830 04:12:30.827726    1252 kuberuntime_sandbox.go:297] "Failed to list pod sandboxes" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:30 minikube kubelet[1252]: E0830 04:12:30.827784    1252 generic.go:238] "GenericPLEG: Unable to retrieve pods" err="rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+Aug 30 04:12:31 minikube kubelet[1252]: E0830 04:12:31.095077    1252 kubelet_node_status.go:540] "Error updating node status, will retry" err="error getting node \"minikube\": Get \"https://control-plane.minikube.internal:8443/api/v1/nodes/minikube?resourceVersion=0&timeout=10s\": dial tcp 10.0.2.15:8443: connect: connection refused"
+Aug 30 04:12:31 minikube kubelet[1252]: E0830 04:12:31.096015    1252 kubelet_node_status.go:540] "Error updating node status, will retry" err="error getting node \"minikube\": Get \"https://control-plane.minikube.internal:8443/api/v1/nodes/minikube?timeout=10s\": dial tcp 10.0.2.15:8443: connect: connection refused"
+Aug 30 04:12:31 minikube kubelet[1252]: E0830 04:12:31.097115    1252 kubelet_node_status.go:540] "Error updating node status, will retry" err="error getting node \"minikube\": Get \"https://control-plane.minikube.internal:8443/api/v1/nodes/minikube?timeout=10s\": dial tcp 10.0.2.15:8443: connect: connection refused"
+Aug 30 04:12:31 minikube kubelet[1252]: E0830 04:12:31.098672    1252 kubelet_node_status.go:540] "Error updating node status, will retry" err="error getting node \"minikube\": Get \"https://control-plane.minikube.internal:8443/api/v1/nodes/minikube?timeout=10s\": dial tcp 10.0.2.15:8443: connect: connection refused"
+Aug 30 04:12:31 minikube kubelet[1252]: E0830 04:12:31.099551    1252 kubelet_node_status.go:540] "Error updating node status, will retry" err="error getting node \"minikube\": Get \"https://control-plane.minikube.internal:8443/api/v1/nodes/minikube?timeout=10s\": dial tcp 10.0.2.15:8443: connect: connection refused"
+Aug 30 04:12:31 minikube kubelet[1252]: E0830 04:12:31.099636    1252 kubelet_node_status.go:527] "Unable to update node status" err="update node status exceeds retry count"
+Aug 30 04:12:31 minikube kubelet[1252]: E0830 04:12:31.591643    1252 kubelet.go:2770] "Container runtime not ready" runtimeReady="RuntimeReady=false reason:DockerDaemonNotReady message:docker: failed to get docker version: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+
